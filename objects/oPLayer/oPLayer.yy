@@ -9,7 +9,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sPlayerWalk",
+    "path": "sprites/sPlayerWalk/sPlayerWalk.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -23,7 +26,12 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":128.0,"y":0.0,},
+    {"x":128.0,"y":128.0,},
+    {"x":0.0,"y":128.0,},
+  ],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},

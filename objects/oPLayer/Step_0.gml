@@ -37,3 +37,5 @@ if (place_meeting(x+hsp, y,oWall))
 	vsp = 0;
 }
 y = y + vsp;
+
+
