@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPLayer",
+  "name": "oPlayer",
   "spriteId": {
-    "name": "sPlayerJump",
-    "path": "sprites/sPlayerJump/sPlayerJump.yy",
+    "name": "sPlayerWalk",
+    "path": "sprites/sPlayerWalk/sPlayerWalk.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Notes/Objects.yy",
+    "path": "folders/Objects.yy",
   },
 }

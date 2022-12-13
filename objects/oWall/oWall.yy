@@ -6,7 +6,7 @@
     "name": "sWall",
     "path": "sprites/sWall/sWall.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Notes/Objects.yy",
+    "path": "folders/Objects.yy",
   },
 }
