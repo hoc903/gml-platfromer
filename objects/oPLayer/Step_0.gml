@@ -14,10 +14,10 @@ vsp = vsp + grv;
 
 if (place_meeting(x,y+1,oWall)) && (key_jump)
 {
-	vsp = -jumpsp
+	vsp = -jumpsp;
 }
 //Horizontal collision 
-if (place_meeting(x,y+vsp,oWall))
+if (place_meeting(x+hsp,y,oWall))
 {
 	while (!place_meeting(x+sign(hsp),y,oWall))
 	{
@@ -28,7 +28,7 @@ if (place_meeting(x,y+vsp,oWall))
 x = x + hsp;
 
 //Vertical collision 
-if (place_meeting(x+hsp, y,oWall))
+if (place_meeting(x, y+vsp,oWall))
 {
 	while (!place_meeting(x,y+sign(vsp),oWall))
 	{
@@ -39,3 +39,27 @@ if (place_meeting(x+hsp, y,oWall))
 y = y + vsp;
 
 
+//Animation /*
+if (!place_meeting(x,y+1,oWall))
+{
+	sprite_index = sPlayerJump;
+	image_speed = 0;
+// Are we moving up
+if (vsp > -4.5) {
+	image_index = 1;
+}
+	if (vsp > 0) image_index = 1; else image_index = 0;
+}
+else 
+{
+	image_speed = 1;
+	if (hsp == 0)
+	{
+		sprite_index = sPlayerIdle;
+	}
+	else
+	{
+		sprite_index = sPlayerWalk;
+	}
+}
+		
